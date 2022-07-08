@@ -1,0 +1,100 @@
+{
+  "id": "3b2a9ee4-9543-470d-b6b0-bc5051e22cd5",
+  "version": "2.0",
+  "name": "http://formy-project.herokuapp.com/",
+  "url": "http://formy-project.herokuapp.com",
+  "tests": [{
+    "id": "ccbfda22-11fa-420b-be3c-39b7a62dfa7e",
+    "name": "test1",
+    "commands": [{
+      "id": "debed6f3-d76a-4913-bcc0-415239562e28",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ffce5e97-9f86-43d4-93b4-ea2707d87472",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1152x726",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12cde772-a8e4-4158-81fb-1036aa3ad182",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkbox-1",
+      "targets": [
+        ["id=checkbox-1", "id"],
+        ["css=#checkbox-1", "css:finder"],
+        ["xpath=//input[@id='checkbox-1']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a7ebeb2f-75e8-4c8f-9252-bc9f652b45f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=checkbox-3",
+      "targets": [
+        ["id=checkbox-3", "id"],
+        ["css=#checkbox-3", "css:finder"],
+        ["xpath=//input[@id='checkbox-3']", "xpath:attributes"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "28276613-2f01-4e87-84fb-73fdf0029849",
+      "comment": "",
+      "command": "clickAt",
+      "target": "id=checkbox-2",
+      "targets": [
+        ["id=checkbox-2", "id"],
+        ["css=#checkbox-2", "css:finder"],
+        ["xpath=//input[@id='checkbox-2']", "xpath:attributes"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "7a8fc912-e7f5-433f-8997-59e3c3538041",
+    "name": "test2",
+    "commands": [{
+      "id": "7af5b874-5f0b-4039-a28c-46cdfa838b2d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bcbb2b0-8899-4fa5-a669-26ff9ba76767",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c2aaaeaa-5b7f-402c-8421-88c5f40ac71e",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.display-3",
+      "targets": [
+        ["css=.display-3", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Welcome to Formy')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "399850b7-e325-44fb-abbc-3ff53857ff1f",
+    "name": "Sanity",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["7a8fc912-e7f5-433f-8997-59e3c3538041", "ccbfda22-11fa-420b-be3c-39b7a62dfa7e"]
+  }],
+  "urls": ["http://formy-project.herokuapp.com/"],
+  "plugins": []
+}
