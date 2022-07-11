@@ -24,9 +24,19 @@ public class FluentWaitDemoUsingLambda extends BaseClass
 				.pollingEvery(Duration.ofMillis(500))
 				.ignoring(NoSuchElementException.class);
 		
-//		wait.until((ele, flag) -> {
-//			
-//		});
-		
+//		Function<F, T>
+		 wait.until((WebElement ele) -> 
+		 {
+			 	boolean flag = false;
+				if(ele.isDisplayed())
+				{
+					System.out.println("element found");
+					flag = true;
+				}
+				else {
+					System.out.println("Waiting!!!!!!!!!");
+				}
+				return flag;
+		 });
 	}
 }
